@@ -2,8 +2,12 @@
   font-family: 'Gilroy-Medium', sans-serif;
 }
 
+#app {
+  text-align: center;
+}
+
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: #070707;
 }
 a:hover {
@@ -60,6 +64,7 @@ body {
     align-self: center;
     font-size: 16px;
     font-weight: bold;
+
     div {
       rotate: 270deg;
     }
@@ -68,6 +73,11 @@ body {
     }
   }
 }
+
+.subpage {
+  padding: 90px;
+}
+
 section{
   display: block;
   place-items: center;
@@ -76,30 +86,37 @@ section{
 } 
 .skills {
   display: flex;
+  gap: 90px;
+  flex-wrap: wrap;
 }
 
 .skill {
   text-align: center;
-  margin: 45px;
+  
   span {
     display: block;
     color: #828282;
   }
 }
+
 .portfolio {
-  padding: 45px;
-  display: block;
-  width: 937px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  .element {
+    padding: 45px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .pic {
   width: 950px;
   height: 387px;
-}
-
-h1 {
-  font-size: 47.34px;
-  line-height: 1.1;
+  padding-top: 25px;
 }
 
 footer {
@@ -108,13 +125,14 @@ footer {
   text-align: center;
   span {
     color: #828282;
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
-#app {
-  text-align: center;
-}
-
 .main-pic {
   object-fit: cover;
   object-position: 0 40%;
@@ -128,7 +146,6 @@ footer {
 }
 
 .about-me {
-  //width: ;
   justify-self: center;
   text-align: center;
 
@@ -138,6 +155,91 @@ footer {
     padding: 5px;
   }
 }
+
 .social-media {
-  padding: 30px;
+  display: flex;
+  padding: 0;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+
+  .element {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .header-title {
+    width: auto;
+    padding: 29px;
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+  }
+  
+  .pic {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 29px;
+  }
+  
+  .main-pic {
+    object-fit: cover;
+  }
+
+  .language {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .portfolio {
+
+    .element {
+      padding: 29px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .page {
+    padding: 29px;
+  }
+
+  .subpage {
+    padding: 29px;
+  }
+
+  footer {
+    padding: 29px;
+  }
+
+  .social-media {
+    display: flex;
+    padding: 0;
+    .element {
+      width: 40px;
+      height: 40px;
+      gap: 50px;
+    }
+  }
+
+  button {
+    width: 100%;        
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
