@@ -2,103 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />!-->
     <link href="./src/style.scss" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis</title>
   </head>
   <body>
-    <header>
-      <div class="header-title">
-        <div class="name">Denis Novik</div>
-        <div class="position">
-          <span>UX | UI designer</span>
-          <span>24  years old, Minsk</span>
+    <header class="header-content">
+      <div class="header-content__title">
+        <div class="header-content__title__name">Denis Novik</div>
+        <div class="header-content__title__position">
+          <span class="header-content__title__position__text">UX | UI designer</span>
+          <span class="header-content__title__position__text">24  years old, Minsk</span>
         </div>
-          <div class="language">
-            <div>
-
-            </div>
-            <div>
-              <span>RU</span> | ENG</div>
-            </div>
+          <div class="header-content__title__language">
+              <span class="header-content__title__language_grey">RU</span> | ENG
+          </div>
       </div>
-      <div class="pic">
-        <img class="main-pic" alt="Denis" src="https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TL0Xq6EJqaQf9XCK6GIw~Tg9foYEsMEB7aM0hlFL-lmaULZffFU4U65lTZVk5VksyGeirB7fHaNBYu7p3EghR9~TR4Ew9wgi2Z2LP5Mf6isxXnXh6gTCoSM03aWOJ0G4aMT1bvO7U90Ha~yjZ6-ZPky84lQiU4GkfDX9EjtuQcTFQOCVbuy0MBYYFywR5ouNg2syRI7tEDZQlbycDyxeCwrVKeWG-PmVfQhh1tRosdfmWPcQ1qTC6saDHrjNUGomjtCvllGmu-EDRAQBKH5S9KsWZgliQgb3RVbOLt1VE5ilpdvrFedEWoPqnSV0F2FWiC4SyXUFHKjPYl4HsxiwBQ__" type="image/jpg">
+      <div class="picture-container">
+        <img class="picture-container__main-picture" alt="Denis Novik" src="https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TL0Xq6EJqaQf9XCK6GIw~Tg9foYEsMEB7aM0hlFL-lmaULZffFU4U65lTZVk5VksyGeirB7fHaNBYu7p3EghR9~TR4Ew9wgi2Z2LP5Mf6isxXnXh6gTCoSM03aWOJ0G4aMT1bvO7U90Ha~yjZ6-ZPky84lQiU4GkfDX9EjtuQcTFQOCVbuy0MBYYFywR5ouNg2syRI7tEDZQlbycDyxeCwrVKeWG-PmVfQhh1tRosdfmWPcQ1qTC6saDHrjNUGomjtCvllGmu-EDRAQBKH5S9KsWZgliQgb3RVbOLt1VE5ilpdvrFedEWoPqnSV0F2FWiC4SyXUFHKjPYl4HsxiwBQ__" type="image/jpg">
       </div>
     </header>
     <main>
-      <div class="page">
-        <section class="about-me">
-          <h2>About me</h2>
-          <p><span>Hi, I'm Denis – UX/UI designer from Minsk.</span> 
-            <span>I'm interested in design and everything connected with it.</span></p>
-          <p><span>I'm studying at courses "Web and mobile design</span><span>interfaces" in IT-Academy.</span></p>
-          <p><span>Ready to implement excellent projects</span><span>with wonderful people.</span></p>
-        </section>
-      </div>
-      <div class="subpage">
-        <section>
+      <section class="about-me">
+        <h2>About me</h2>
+        <p class="about-me__paragraph"><span>Hi, I'm Denis – UX/UI designer from Minsk.</span> 
+          <span>I'm interested in design and everything connected with it.</span></p>
+        <p class="about-me__paragraph"><span>I'm studying at courses "Web and mobile design</span><span>interfaces" in IT-Academy.</span></p>
+        <p class="about-me__paragraph"><span>Ready to implement excellent projects</span><span>with wonderful people.</span></p>
+      </section>
+      <section class="skills">
+        <div class="skills__title">
           <h2>Skills</h2>
           <p>I work in such programs as</p>
-        </section>
-        <section  class="skills">
-      <section class="skill">
-        <img src="img/aps.svg" type="image/svg">
-        <p><span>Adobe</span><span>Photoshop</span></p>
-        <img src="img/psLevel.svg" type="image/svg">
+        </div>
+        <div class="skills__list">
+          <div class="skills__list__item">
+            <img src="img/aps.svg" type="image/svg">
+            <p class="skills__skill__title"><span>Adobe</span><span>Photoshop</span></p>
+            <img src="img/psLevel.svg" type="image/svg">
+          </div>
+          <div class="skills__list__item">
+            <img src="img/aill.svg" type="image/svg">
+            <p class="skills__skill__title"><span>Adobe</span><span>Illustrator</span></p>
+            <img src="img/aillLevel.svg" type="image/svg">
+          </div>
+          <div class="skills__list__item">
+            <img src="img/ae.svg" type="image/svg">
+            <p class="skills__skill__title"><span>Adobe</span><span> After Effects</span></p>
+            <img src="img/afLevel.svg" type="image/svg">
+          </div>
+          <div class="skills__list__item">
+            <img src="img/figma.svg" type="image/svg">
+            <p class="skills__skill__title"><span>Figma</span></p>
+            <img src="img/figmaLevel.svg" type="image/svg">
+          </div>
+        </div>
       </section>
-      <section class="skill">
-        <img src="img/aill.svg" type="image/svg">
-        <p><span>Adobe</span><span>Illustrator</span></p>
-        <img src="img/aillLevel.svg" type="image/svg">
+      <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio__element">
+          <img class="portfolio__element__pic" 
+          src="https://s3-alpha-sig.figma.com/img/6d43/fbc0/19eb6e72d32e254c8b02825f0390f169?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o9lekl73WdKGA1nuBLlEu1Hq0VJL1Wr1zXs50Ojq4vm5dUL0aYMgSi50VcNW0SmYOGh9Zj3lR0YBZipNra9gM8g04z5LaAR76pEY-~PNkLkn54L8ftlVlj506aWTXtyWWS3LUwHJ1zRH25SZdlyrp3vHaH6utf8HC1cSmWCPzHXNEorO-MnFinjju0pqbGj2J9MHvbeSNayTlGy-xFB8JbKbJgqowRM5jWTwARi9KqFpiGzWhFmz9M0UVX5SKt3H1Z8VPfMe7JWEzmmWQSaxMUc6AQik9bjYgBBO8ITvNTCekekYbNPzChsEkvKAINMnsucRUSx21UeqbuPcnQGefQ__" type="image/png" alt="Online Fashion Store">
+          <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Online fashion store - Homepage</a>
+        </div>
+        <div class="portfolio__element">
+          <img class="portfolio__element__pic" 
+          src="https://s3-alpha-sig.figma.com/img/4234/8d90/4dc19da808f0bf66bdd48c26c8228ec8?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kN3DYB7C~QFxCZgxRo25bZYJXt6OmGZZUJtxp7Ko6EqCCoeyRGjr8VsKsq8qUJ4Q8uMDaP7nKxh1B1NIXL1yV-nSTURrOHhIWRUQa~dMqwEXQhUCJ~XiAihW42CjjjemI3S4AtKsvLHdgExCO5xBykdjZKOJ1hXNzXfqrbhKCq3iZRy2c-TLjASrBPY86uTVrfq4d300zi8ADmkF5z1bq1Gr29~kNIOn4gbu9sqXlM7o19QPPkQekK2C8pnVtyvCeXXaT66ciTUYRaVjM7BZ17yjXnMWWhWsDTwwI-QbtWiVVV0sN~wrgZxcND7tsOi58bE19Eh7b6196-kwScKrLQ__" type="image/png" alt="Reebok Store Concept">
+          <a class="link" href="https://i.pinimg.com/564x/3d/94/a2/3d94a2ad6327fbd9802b8e3dbc9e81c3.jpg">Reebok Store - Concept</a>
+        </div>
+        <div class="portfolio__element">
+          <img class="portfolio__element__pic" 
+          src="https://s3-alpha-sig.figma.com/img/7bc4/92d5/1d2a3f989e046251ea9557eedaee9136?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CCWSTVyxnOoxOdBO3e5~JG5kBXYs-8lm24Ealdr-gfr5tfNxkdQTUz2OyCWVEZPGgf9h--CUHh1q4UmbTRVVBls0owCQo~v8k4aXnJea0ej2JvUHupLe9Jng5llYr13spFnjNfESHejLHfLl2tGtZzHpZt6vfT7vDxLUATNsVvle0jiN57eYS9vTEb9~MS5w7CloQifTetu5n2M8nUU9QKiZJqhbpAl-pX0UTzNezBobC-A2MCtG8TkEj~iD~DgIYKZsPgKPv0XUiO9JkAjZpovKpJ-LTgoE6lFt5tNAiSrNb2~udit8BS7-2ft91Mu-IBSljB5F38G6GTToRMYvJQ__" type="image/png" alt="Braun Landing Page">
+          <a class="link" href="https://cs13.pikabu.ru/post_img/2023/10/17/7/1697539056176771402.jpg">Braun Landing Page - Concept</a>
+        </div>
       </section>
-      <section class="skill">
-        <img src="img/ae.svg" type="image/svg">
-        <p><span>Adobe</span><span> After Effects</span></p>
-        <img src="img/afLevel.svg" type="image/svg">
-      </section>
-      <section class="skill">
-        <img src="img/figma.svg" type="image/svg">
-        <p><span>Figma</span></p>
-        <img src="img/figmaLevel.svg" type="image/svg">
-      </section>
-    </section>
-  </div>
-  <div class="page">
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-      <img class="element" 
-      src="https://s3-alpha-sig.figma.com/img/6d43/fbc0/19eb6e72d32e254c8b02825f0390f169?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o9lekl73WdKGA1nuBLlEu1Hq0VJL1Wr1zXs50Ojq4vm5dUL0aYMgSi50VcNW0SmYOGh9Zj3lR0YBZipNra9gM8g04z5LaAR76pEY-~PNkLkn54L8ftlVlj506aWTXtyWWS3LUwHJ1zRH25SZdlyrp3vHaH6utf8HC1cSmWCPzHXNEorO-MnFinjju0pqbGj2J9MHvbeSNayTlGy-xFB8JbKbJgqowRM5jWTwARi9KqFpiGzWhFmz9M0UVX5SKt3H1Z8VPfMe7JWEzmmWQSaxMUc6AQik9bjYgBBO8ITvNTCekekYbNPzChsEkvKAINMnsucRUSx21UeqbuPcnQGefQ__" type="image/png">
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Online fashion store - Homepage</a>
-    </section>
-    <section class="portfolio">
-      <img class="element" 
-      src="https://s3-alpha-sig.figma.com/img/4234/8d90/4dc19da808f0bf66bdd48c26c8228ec8?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kN3DYB7C~QFxCZgxRo25bZYJXt6OmGZZUJtxp7Ko6EqCCoeyRGjr8VsKsq8qUJ4Q8uMDaP7nKxh1B1NIXL1yV-nSTURrOHhIWRUQa~dMqwEXQhUCJ~XiAihW42CjjjemI3S4AtKsvLHdgExCO5xBykdjZKOJ1hXNzXfqrbhKCq3iZRy2c-TLjASrBPY86uTVrfq4d300zi8ADmkF5z1bq1Gr29~kNIOn4gbu9sqXlM7o19QPPkQekK2C8pnVtyvCeXXaT66ciTUYRaVjM7BZ17yjXnMWWhWsDTwwI-QbtWiVVV0sN~wrgZxcND7tsOi58bE19Eh7b6196-kwScKrLQ__" type="image/png">
-      <a href="https://i.pinimg.com/564x/3d/94/a2/3d94a2ad6327fbd9802b8e3dbc9e81c3.jpg">Reebok Store - Concept</a>
-    </section>
-    <section class="portfolio">
-      <img class="element" 
-      src="https://s3-alpha-sig.figma.com/img/7bc4/92d5/1d2a3f989e046251ea9557eedaee9136?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CCWSTVyxnOoxOdBO3e5~JG5kBXYs-8lm24Ealdr-gfr5tfNxkdQTUz2OyCWVEZPGgf9h--CUHh1q4UmbTRVVBls0owCQo~v8k4aXnJea0ej2JvUHupLe9Jng5llYr13spFnjNfESHejLHfLl2tGtZzHpZt6vfT7vDxLUATNsVvle0jiN57eYS9vTEb9~MS5w7CloQifTetu5n2M8nUU9QKiZJqhbpAl-pX0UTzNezBobC-A2MCtG8TkEj~iD~DgIYKZsPgKPv0XUiO9JkAjZpovKpJ-LTgoE6lFt5tNAiSrNb2~udit8BS7-2ft91Mu-IBSljB5F38G6GTToRMYvJQ__" type="image/png">
-      <a href="https://cs13.pikabu.ru/post_img/2023/10/17/7/1697539056176771402.jpg">Braun Landing Page - Concept</a>
-    </section>
-  </div>
-  </main>
-  <footer>
-    <h2>Contacts</h2>
-    <p>Want to know more or just chat?</p>
-    <p>You are welcome!</p>
-    <button>Send message</button> 
-    <div class="social-media">
-
-      <img src="img/linkedIn.svg" class="element">
-      <img src="img/instagram.svg" class="element">
-      <img src="img/behance.svg" class="element">
-      <img src="img/dribble.svg" class="element">
-    </div>
-      <p><span>Like me on</span>
-      <span>LinkedIn, Instagram, Behance, Dribble</span></p>
+    </main>
+    <footer class="contact-page">
+      <h2>Contacts</h2>
+      <p class="contact-page__paragraph">Want to know more or just chat?</p>
+      <p class="contact-page__paragraph">You are welcome!</p>
+      <button class="send-message-btn">Send message</button> 
+      <div class="social-media">
+        <a href="https://www.linkedin.com/"><img src="img/linkedIn.svg" class="social-media__logo"></a>
+        <a href="https://www.instagram.com/"><img src="img/instagram.svg" class="social-media__logo"></a>
+        <a href="https://www.behance.net/"><img src="img/behance.svg" class="social-media__logo"></a>
+        <a href="https://dribbble.com/"><img src="img/dribble.svg" class="social-media__logo"></a>
+      </div>
+        <p class="contact-page__paragraph contact-page__paragraph_grey"><span>Like me on</span>
+        <span>LinkedIn, Instagram, Behance, Dribble</span></p>
     </footer>
   </body>
 </html>
